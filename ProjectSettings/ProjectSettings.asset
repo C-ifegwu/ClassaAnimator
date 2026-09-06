@@ -522,7 +522,10 @@ PlayerSettings:
       m_Height: 720
       m_Kind: 1
       m_SubKind: 
-  m_BuildTargetBatching: []
+  m_BuildTargetBatching:
+  - m_BuildTarget: WebGL
+    m_StaticBatching: 0
+    m_DynamicBatching: 0
   m_BuildTargetShaderSettings: []
   m_BuildTargetGraphicsJobs: []
   m_BuildTargetGraphicsJobMode: []
@@ -823,7 +826,25 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   webEnableSubmoduleStrippingCompatibility: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    EmbeddedLinux: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    GameCoreScarlett: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    GameCoreXboxOne: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    Kepler: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    LinuxHeadlessSimulation: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    Nintendo Switch: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    Nintendo Switch 2: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    PS4: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    PS5: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    QNX: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    Standalone: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    VisionOS: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    WebGL: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    Windows Store Apps: DOTWEEN;DOTWEEN_UITOOLKIT
+    XboxOne: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
+    iPhone: DOTWEEN;DOTWEEN_UITOOLKIT
+    tvOS: UNITY_POST_PROCESSING_STACK_V2;DOTWEEN;DOTWEEN_UITOOLKIT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -920,7 +941,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   enableDirectStorage: 0
   cloudProjectId: 7dd1fabb-1f61-4d9f-a302-8ca7768c1e33
